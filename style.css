@@ -1,19 +1,14 @@
-
 *{
     padding: 0;
     margin: 0;
 }
-
 body{
   margin: 0;
   padding: 0;
 }
-
 html, body {
   height: 100%;
 }
-
-
 .top-header {
     background-color: #bea571; /* Golden background color */
     color: white;
@@ -51,9 +46,6 @@ html, body {
 .Hover-Atags:hover{
   border-bottom: 1.5px solid #000000;
 }
-
-
-
 .nav-bar a{
   color: rgb(106, 100, 100);
   text-decoration: none;
@@ -63,31 +55,25 @@ html, body {
 .dropdown-menu a {
  color: black; /* Ensure visible text */
 }
-
 .dropdown-menu a:hover {
 background-color: #f4f4f4; /* Highlight background on hover */
 }
-
 .logo-img img{
 width: 50px;
 height: 65px;
 margin-left: 15vh;
 }
-
 .product-card {
   transition: transform 0.3s ease;
   height: 100%;
 }
-
 .product-card:hover {
   transform: translateY(-5px);
 }
-
 .product-image {
   height: 200px;
   object-fit: contain;
 }
-
 .sale-badge {
   position: absolute;
   bottom: 15vh;
@@ -98,52 +84,42 @@ margin-left: 15vh;
   border-radius: 20px;
   font-size: small;
 }
-
 .original-price {
   text-decoration: line-through;
   color: #6c757d;
   font-size: 0.9em;
 }
-
 .sale-price {
   color: #000;
   font-weight: bold;
   font-size: 1.1em;
 }
-
 .head-logo{
  font-size: 20px;
 }
-
 .In-Demand-Products{
   font-family: 'Poppins', sans-serif;
   font-weight: 400;
   font-size: 22px;
 }
-
 .product-card {
   font-family: 'Century Gothic', sans-serif;
 }
-
 .card-title{
   font-size: 12px;
   text-align: start;
   font-weight: normal;
 }
-
 .price-container{
   text-align: start;
 }
-
 .original-price{
   font-size: 13px;
 }
-
 .sale-price{
   font-size: 15px;
   font-weight: 400;
 }
-
 .product-image {
   width: 100%;
   height: auto; 
@@ -151,14 +127,11 @@ margin-left: 15vh;
   object-fit: cover; 
   padding: 5px;
 }  
-
-
 .view-all {
   text-align: center;
   margin-top: 20px;
   font-family: 'Century Gothic', sans-serif;
 }
-
 .view-all-button {
   background-color: #f5a1a1; 
   color: white; 
@@ -166,74 +139,37 @@ margin-left: 15vh;
   padding: 12px 35px; 
   font-size: 16px; 
 }
-
 .Collection-Products{
   font-family: 'Poppins', sans-serif;
   font-weight: 400;
   font-size: 22px;
   padding-top: 8vh;
 }
-
 .hover-effect {
   transition: transform 0.5s ease, box-shadow 0.4s ease;
 }
-
 .hover-effect:hover {
   transform: translateY(-10px); /* Moves the image up */
   box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3); /* Adds a shadow */
 }
-
 .hover-link{
   font-weight: 400;
 }
-
 .Master-Ring{
   font-family: 'Poppins', sans-serif;
   font-weight: 400;
   font-size: 22px;
   padding-top: 6vh;
 }
-
-
 .slick-prev,
 .slick-next {
-  background-color: #000;
-  color: #fff;
-  border-radius: 50%;
-  width: 40px;
-  height: 40px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  z-index: 1000;
+  display: none;
 }
-
-.slick-prev:hover,
-.slick-next:hover {
-  background-color: #ff6600;
-}
-
-.slick-prev {
-  left: 80vh;
-  top: 80vh;
-}
-
-.slick-next {
-  right: 80vh;
-  top: 80vh;
-}
-
-#slickSlides{
-  text-align: center;
-  margin-top: 5vh;
-}
-
 .view-all-rings{
   text-align: center;
   font-family: 'Century Gothic', sans-serif;
   margin-bottom: 6vh;
 }
-
 .view-all-button{
   background-color: #f5a1a1; 
   color: white; 
@@ -241,46 +177,47 @@ margin-left: 15vh;
   padding: 12px 35px; 
   font-size: 16px; 
 }
-
 .Gift-Guides-color{
   background-color: #f3f3f3;
   /* padding: 100px; */
 }
-
-
 .Gift-text{
   font-family: 'Poppins', sans-serif;
   font-size: 24px;
   padding-top: 6vh;
   padding-bottom: 2vh;
 }
-
 .P-Gift-text{
   font-family: 'Century Gothic', sans-serif;
   font-size: 16px;
   color: rgb(106, 100, 100);
-  padding-top: 2vh;
-  padding-bottom: 5vh;
+  padding-top: 8px;
+  padding-bottom: 20px;
 }
-
 .Gift-Boxes{
   background-color: #f3f3f3;
   padding: 36px 74px;
 }
-
-
-
 .hover-image {
-  width: 100%; 
-  height: 280px; 
+  width: 95%; 
+  height: 260px; 
   object-fit: cover;
+}
+
+@media (max-width: 576px) {
+  .hover-image {
+   /* height: 50%;
+   width: 97%; */
+   width: 97%;    /* Adjust the width to fit the container */
+    height: 180px;  /* Set a consistent height for all images */
+    object-fit: cover;
+  }
 }
 
 .hover-link{
   font-family: 'Century Gothic', sans-serif;
   text-align: start;
 }
-
 .hero-section {
   height: 100vh; /* Full-screen height */
   background-image: url('jewel-Images/GB-in-Mall.webp'); /* Replace with your image path */
@@ -293,7 +230,6 @@ margin-left: 15vh;
   text-align: center;
   position: relative; /* For overlay positioning */
 }
-
 .hero-section::before {
   content: '';
   position: absolute;
@@ -301,28 +237,33 @@ margin-left: 15vh;
   left: 0;
   width: 100%;
   height: 100%;
-  background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent black overlay */
+  background-color: rgba(35, 10, 10, 0.7); /* Darker overlay */
   z-index: 1; /* Places the overlay behind the content */
 }
 
-.content-section {
-  padding: 50px;
+.main-text {
   position: relative;
   z-index: 2; /* Ensures text is above the overlay */
-}
-
-.p-text-font {
-  font-family: 'Century Gothic', sans-serif;
-  font-size: 16px;
-}
-
-.h1-text-font {
-  font-size: 22px;
+  
+  padding: 20px; /* Adds spacing around the text */
+  border-radius: 8px; /* Optional: Rounded corners for a clean look */
 }
 
 .h1-text-font, .p-text-font {
-  color: white !important; /* Ensures white color */
+  color: #ffffff !important; /* Pure white text */
+
+ 
 }
+
+.h1-text-font {
+  font-size: 22px; /* Larger heading size */
+}
+
+.p-text-font {
+  font-size: 18px; /* Slightly larger paragraph text */
+  font-weight: 300;
+}
+
 
 .reviews-text{
   font-family: 'Century Gothic', sans-serif;
@@ -331,12 +272,10 @@ margin-left: 15vh;
   font-weight: 600;
   padding-top: 4vh;
 }
-
 .reviews-text i{
   color: #f5a1a1;
   font-size: 15px;
 }
-
 .reviews-p-text{
   font-family: 'Century Gothic', sans-serif;
   text-align: center;
@@ -344,39 +283,31 @@ margin-left: 15vh;
   color: rgb(106, 100, 100);
   padding-top: 3px;
 }
-
 .icecube-image{
   width: 100%;
 }
-
 .Aboutus-content{
   background-color: #f3f3f3;
   
 }
-
 .row {
   margin-bottom: 0; 
 }
-
 .col-lg-4, .col {
   padding: 0; 
 }
-
 .Aboutus-content {
   margin-top: 0; 
 }
-
-
 .About-Us-H1{
   font-family: 'Poppins', sans-serif;
-  padding-left: 12vh;
-  padding-top: 12vh;
+  padding-left: 70px;
+  padding-top:  70px;
   font-size: 6vh;
   padding-bottom: 31px;
 }
-
 .all3-p{
-  padding-left: 12vh;
+  padding-left: 70px;
   padding-right: 13vh;
   padding-bottom: 5vh;
   font-size: 17px;
@@ -384,13 +315,11 @@ margin-left: 15vh;
   color: rgb(106, 100, 100);
   text-align: start;
 }
-
 .buton-Shop-Now{
-  padding-left: 12vh;
+  padding-left: 70px;
   padding-right: 13vh;
   padding-bottom: 21vh;
 }
-
 .buton-Shop-Now button{
   padding: 11px 11px;
   padding-left: 28px;
@@ -399,7 +328,6 @@ margin-left: 15vh;
   color: #bea571;
   border: 2px solid #bea571;
 }
-
 .Recommended-Text h4{
   padding-top: 10vh;
   padding-bottom: 2vh;
@@ -408,21 +336,16 @@ margin-left: 15vh;
   font-family: 'Poppins', sans-serif;
   font-size: 22px;
 }
-
 .footer-section{
   background-color:#bea571;
 }
-
 .footer-logo{
   width: 14vh;
   height: 19vh;
 }
-
 .end-Footer img {
   margin-top: 30px;
-  margin-bottom: 20vh;
 }
-
 .end-Footer h5 {
   margin-top: 35px;
   margin-bottom: 20px; /* Adds more gap between the main text and the first <p> */
@@ -431,7 +354,6 @@ margin-left: 15vh;
   font-family: 'Century Gothic', sans-serif;
   font-size: 16px;
 }
-
 .end-Footer p {
   margin-top: 10px; /* Small gap between <p> elements */
   text-align: start;
@@ -439,21 +361,15 @@ margin-left: 15vh;
   font-family: 'Century Gothic', sans-serif;
   font-size: 15px;
 }
-
 .Our-Story p{
   font-size: 17px;
 }
-
-
 .Subscribe-Emails{
   font-size: 16px;
   color: white;
   font-family: 'Century Gothic', sans-serif;
 }
-
-
-/* Input container style */
-.input-container {
+.input-container{
   display: flex;
   align-items: center;
   border: 2px solid #FFFFFFBF;
@@ -461,14 +377,18 @@ margin-left: 15vh;
   padding: 10px;
   position: relative;
 }
-
 .input-container {
-  width: 60vh; /* 80% of the parent container */
-  max-width: 380px; /* Optional: set a maximum width */
+ width: 70%;
 }
 
+@media (max-width: 576px) {
+  .input-container {
+   /* height: 50%;
+   width: 97%; */
+   width: 100%;    /* Adjust the width to fit the container */
+  }
+}
 
-/* Input field style */
 .email-input {
   border: none;
   outline: none;
@@ -478,15 +398,10 @@ margin-left: 15vh;
   font-size: 16px;
   color: #FFFFFFBF;
   padding-left: 10px;
-
 }
-
-/* Placeholder style */
 .email-input::placeholder {
   color: #FFFFFFBF;
 }
-
-/* Arrow button style */
 .arrow-button {
   background: none;
   border: none;
@@ -497,41 +412,31 @@ margin-left: 15vh;
   align-items: center;
   justify-content: center;
 }
-
-/* Arrow icon */
 .arrow-button i {
   font-size: 18px;
 }
-
-
 .social-icons-Footer{
   font-size: 17px;
   margin-top: 12vh;
   color: white;
 }
-
 .End-Of-Footer p{
   text-align: center;
   font-size: 13px;
   padding-top: 7vh;
   padding-bottom: 7vh;
 }
-
 .footer-line {
   border: 0;
   border-top: 1px solid #FFFFFFBF; /* Creates a subtle white line */
   margin-top: 10px; /* Optional: Adds space above the line */
   margin-bottom: 10px; /* Optional: Adds space below the line */
 }
-
-
 .Login-Font{
   font-family: 'Century Gothic', sans-serif;
   font-size: 6vh;
   font-weight: 500;
 }
-
-
 .email-input-Login{
   border: none;
   outline: none;
@@ -542,7 +447,6 @@ margin-left: 15vh;
   color: #000000bf;
   padding-left: 10px;
 }
-
 .input-container-login{
   display: flex;
   align-items: center;
@@ -552,7 +456,6 @@ margin-left: 15vh;
   position: relative;
   width: 100%;
 }
-
 .forgot-password a{
   font-family: 'Century Gothic', sans-serif;
   margin-top: 7px;
@@ -562,7 +465,6 @@ margin-left: 15vh;
   border-bottom: 1.5px solid #000;
   padding-bottom: 2px;
 }
-
 .Create-Account a{  
   font-family: 'Century Gothic', sans-serif;
   font-size: 15px;
@@ -572,7 +474,6 @@ margin-left: 15vh;
   border-bottom: 1.5px solid #000;
   padding-bottom: 2px;
 }
-
 .Sign-In-button{
   background-color: #f5a1a1; 
   color: white; 
@@ -582,28 +483,22 @@ margin-left: 15vh;
   transition: all 0.5s;
   font-family: 'Century Gothic', sans-serif;
 }
-
-
 .Sign-In-button:hover{
   transform: scale(1.025);
   box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3); /* Adds a shadow */
 }
-
 form{
   max-width: 450px;
   margin: 0 auto;
 }
-
 .Cart-Size{
   font-family: 'Century Gothic', sans-serif;
   font-size: 6vh;
   font-weight: 500;
 }
-
 .Continue-Shopping{
   margin-top: 6vh;
 }
-
 .Shopping-Button{
   background-color: #f5a1a1; 
   color: white; 
@@ -613,14 +508,12 @@ form{
   transition: all 0.5s;
   font-family: 'Century Gothic', sans-serif;
 }
-
 .Have-Account{
    font-family: 'Century Gothic', sans-serif;
    font-size: 19px;
    margin-top: 10vh;
    margin-bottom: 0;
 }
-
 .Check-By-LogIn{
   font-family: 'Century Gothic', sans-serif;
   font-size: 18px;
@@ -629,14 +522,53 @@ form{
   margin-top: 7px;
   color: rgb(106, 100, 100);
 }
-
 .Log-In-Cart{
   color: #000;
   text-decoration: none;
   border-bottom: 1.5px solid #000;
   color: rgb(106, 100, 100);
 }
-
 .Cart-Section{
   margin-top: 13vh;
+}
+
+
+.offcanvas-start {
+  margin-top: 163px; 
+}
+
+.drawer-footer{
+  background-color: #f3f3f3;
+  padding: 38px 30px;
+}
+
+
+.user-logo{
+  font-size: 21px;
+  color: #121212;
+}
+
+.login-link{
+  font-size: 10px;
+}
+
+.drawer-i-tags {
+  gap: 27px;
+}
+
+.row .col-6 { 
+  padding: 0; /* Remove any default padding */
+}
+
+.row {
+  margin-left: 0;
+  margin-right: 0;
+}
+.row .col-6 img {
+  padding: 0; /* Remove padding from images */
+  margin: 0;  /* Remove margin around images */
+}
+
+.row .col-6 h6 {
+  padding: 0; /* Reduce padding around text */
 }

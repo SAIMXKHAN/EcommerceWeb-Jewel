@@ -42,143 +42,182 @@
       <div class="container d-flex justify-content-between align-items-center">
         <div class="social-icons d-lg-flex gap-lg-4 d-none">
           <i class="fa-brands fa-facebook"></i>
-          <i class="fa-brands fa-instagram"></i>
-          <i class="fa-brands fa-tiktok"></i>
-          <i class="fa-brands fa-snapchat"></i>
-        </div>
-        <div
-          id="topHeaderCarousel"
-          class="carousel slide text-md-center"
-          data-bs-ride="carousel"
-          style="flex-grow: 1; text-align: center"
-        >
-          <div class="carousel-inner">
-            <div class="carousel-item active">
-              <span>USE CODE BLINGS10 FOR EXTRA 10% OFF</span>
-            </div>
-            <div class="carousel-item">
-              <span>FREE SHIPPING ON ALL ORDERS OVER PKR 5,000/-</span>
-            </div>
-            <div class="carousel-item">
-              <span>ALL PRODUCTS COME WITH A 30-DAY WARRANTY</span>
-            </div>
-          </div>
-          <button
-            class="carousel-control-prev"
-            type="button"
-            data-bs-target="#topHeaderCarousel"
-            data-bs-slide="prev"
-          >
-            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-          </button>
-          <button
-            class="carousel-control-next"
-            type="button"
-            data-bs-target="#topHeaderCarousel"
-            data-bs-slide="next"
-          >
+           <i class="fa-brands fa-instagram"></i>
+            <i class="fa-brands fa-tiktok"></i>
+             <i class="fa-brands fa-snapchat"></i>
+               </div>
+                 <div id="topHeaderCarousel" class="carousel slide text-md-center" data-bs-ride="carousel" style="flex-grow: 1; text-align: center">
+                  <div class="carousel-inner text-center">
+                   <div class="carousel-item active">
+                   <span>USE CODE BLINGS10 FOR EXTRA 10% OFF</span>
+                    </div>
+                   <div class="carousel-item">
+                   <span>FREE SHIPPING ON ALL ORDERS OVER PKR 5,000/-</span>
+                   </div>
+                     <div class="carousel-item">
+                    <span>ALL PRODUCTS COME WITH A 30-DAY WARRANTY</span>
+                 </div>
+                </div>
+               <button class="carousel-control-prev" type="button" data-bs-target="#topHeaderCarousel" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                </button>
+              <button class="carousel-control-next" type="button" data-bs-target="#topHeaderCarousel" data-bs-slide="next">
             <span class="carousel-control-next-icon" aria-hidden="true"></span>
           </button>
         </div>
       </div>
     </div>
 
-    <div class="Header sticky-top">
+     <div class="Header sticky-top">
       <div class="container">
         <div class="nav-bar d-flex align-items-center justify-content-between">
-          <!-- Drawer for Mobile -->
+           <!-- Drawer Toggle for Mobile  -->
           <button
             class="navbar-toggler d-lg-none"
             type="button"
-            data-bs-toggle="collapse"
-            data-bs-target="#navbarContent"
-            aria-controls="navbarContent"
-            aria-expanded="false"
+            data-bs-toggle="offcanvas"
+            data-bs-target="#drawerContent"
+            aria-controls="drawerContent"
             aria-label="Toggle navigation"
           >
-            <i class="fa-solid fa-bars"></i>
+            <i class="fa-solid fa-bars fa-xl ms-3"></i>
+            
           </button>
-
-          <!-- Collapsible Drawer for Navigation Links (Mobile) -->
+  
+          <!-- Offcanvas Drawer -->
           <div
-            class="collapse navbar-collapse bg-dark text-white p-3 d-lg-none"
-            id="navbarContent"
+            class="offcanvas offcanvas-start"
+            tabindex="-1"
+            id="drawerContent"
+            aria-labelledby="drawerContentLabel"
+            data-bs-backdrop="false"
           >
-            <div class="d-flex flex-column gap-3 py-3">
-              <a href="#" class="text-white">Home</a>
-              <a href="#" class="text-white">Shop</a>
-              <a href="#" class="text-white">Flash Sale %</a>
-              <a href="#" class="text-white">New Arrivals</a>
-              <a href="#" class="text-white">Best Sellers</a>
+           
+            <div class="offcanvas-body">
+              <div class="d-flex flex-column gap-3 py-3">
+                <div class="drawer-links">
+                  <a href="#" class="text-dark fs-5 ms-3">Home</a>
+                </div>
+                <div class="dropdown p-0">
+                  <a
+                    class="dropdown-toggle fs-5 ms-3"
+                    href="#"
+                    role="button"
+                    id="dropdownMenuLink"
+                    data-bs-toggle="dropdown"
+                    aria-expanded="false"
+                  >
+                    Shop
+                  </a>
+                  <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                    <li><a class="dropdown-item" href="#">All Products</a></li>
+                    <li><a class="dropdown-item" href="#">Necklaces</a></li>
+                    <li><a class="dropdown-item" href="#">Collections</a></li>
+                    <li><a class="dropdown-item" href="#">Rings</a></li>
+                    <li><a class="dropdown-item" href="#">Earrings</a></li>
+                    <li><a class="dropdown-item" href="#">Bracelets & Anklets</a></li>
+                    <li>
+                      <a class="dropdown-item" href="#">Hair Essentials</a>
+                    </li>
+                    <li>
+                      <a class="dropdown-item" href="#">Boxes / Gift Packaging</a>
+                    </li>
+                    <li><a class="dropdown-item" href="#">Matching Sets</a></li>
+                    <li>
+                      <a class="dropdown-item" href="#">Silver Collection</a>
+                   </li>
+                    <li><a class="dropdown-item" href="#">Accessories</a></li>
+                    <li><a class="dropdown-item" href="#">Bags/Wallets</a></li>
+                  </ul>
+                </div>
+                <a href="#" class="text-dark fs-5 ms-3">Flash Sale %</a>
+                <a href="#" class="text-dark fs-5 ms-3">New Arrivals</a>
+                <a href="#" class="text-dark fs-5 ms-3">Best Sellers</a>
+              </div>
+            </div>
+
+            <div class="drawer-footer">
+              <div class="drawer-login d-flex gap-3">
+                <a href="./login.html"><i class="user-logo fa-regular fa-user fa-lg text-dark ms-2"></i></a>
+                <p class="login-link fw-semibold"><a href="./login.html">Log in</a></p>
+              </div>
+              <div class="drawer-i-tags ms-2 d-flex mt-3 ">
+                 <i class="fa-brands fa-facebook fa-lg"></i>
+                 <i class="fa-brands fa-instagram fa-lg"></i>
+                 <i class="fa-brands fa-tiktok fa-lg"></i>
+                 <i class="fa-brands fa-snapchat fa-lg"></i>
+                </div>
+            </div>
+
+          </div>
+  
+          <!-- Full Navigation for Larger Screens -->
+          <div class="d-none d-lg-flex align-items-center justify-content-between">
+            <div class="d-flex gap-4">
+              <p class="forgot-password">
+                <a href="#">Home</a>
+              </p>
+              <div class="dropdown p-0">
+                <a
+                  class="dropdown-toggle"
+                  href="#"
+                  role="button"
+                  id="dropdownMenuLink"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  Shop
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                  <li><a class="dropdown-item" href="#">All Products</a></li>
+                  <li><a class="dropdown-item" href="#">Necklaces</a></li>
+                  <li><a class="dropdown-item" href="#">Collections</a></li>
+                  <li><a class="dropdown-item" href="#">Rings</a></li>
+                  <li><a class="dropdown-item" href="#">Earrings</a></li>
+                  <li><a class="dropdown-item" href="#">Bracelets & Anklets</a></li>
+                  <li>
+                    <a class="dropdown-item" href="#">Hair Essentials</a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="#">Boxes / Gift Packaging</a>
+                  </li>
+                  <li><a class="dropdown-item" href="#">Matching Sets</a></li>
+                  <li>
+                    <a class="dropdown-item" href="#">Silver Collection</a>
+                  </li>
+                  <li><a class="dropdown-item" href="#">Accessories</a></li>
+                  <li><a class="dropdown-item" href="#">Bags/Wallets</a></li>
+                </ul>
+              </div>
+              <p class="Hover-Atags">
+                <a href="#">Flash Sale %</a>
+              </p>
+              <p class="Hover-Atags">
+                <a href="#">New Arrivals</a>
+              </p>
+              <p class="Hover-Atags">
+                <a href="#">Best Sellers</a>
+              </p>
             </div>
           </div>
-
-          <!-- Full Navigation for Larger Screens -->
-          <div
-            class="d-none d-lg-flex align-items-center justify-content-between"
-          >
-          <div class="d-flex gap-4">
-            <p class="Hover-Atags">
-                <a href="#">Home</a>
-            </p>
-          <div class="dropdown p-0">
-            <a
-              class="dropdown-toggle"
-              href="#"
-              role="button"
-              id="dropdownMenuLink"
-              data-bs-toggle="dropdown"
-              aria-expanded="false"
-              >Shop</a
-            >
-            <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink">
-              <li><a class="dropdown-item" href="#">All Products</a></li>
-              <li><a class="dropdown-item" href="#">Necklaces</a></li>
-              <li><a class="dropdown-item" href="#">Collections</a></li>
-              <li><a class="dropdown-item" href="#">Rings</a></li>
-              <li><a class="dropdown-item" href="#">Earrings</a></li>
-              <li>
-                <a class="dropdown-item" href="#">Bracelets & Anklets</a>
-              </li>
-              <li><a class="dropdown-item" href="#">Hair Essentials</a></li>
-              <li>
-                <a class="dropdown-item" href="#">Boxes / Gift Packaging</a>
-              </li>
-              <li><a class="dropdown-item" href="#">Matching Sets</a></li>
-              <li>
-                <a class="dropdown-item" href="#">Silver Collection</a>
-              </li>
-              <li><a class="dropdown-item" href="#">Accessories</a></li>
-              <li><a class="dropdown-item" href="#">Bags/Wallets</a></li>
-            </ul>
-          </div>
-          <p class="Hover-Atags">
-            <a href="#">Flash Sale %</a>
-          </p>
-          <p class="Hover-Atags">
-          <a href="#">New Arrivals</a>
-          </p>
-          <p class="Hover-Atags">
-            <a href="#">Best Sellers</a>
-          </p>
-        </div>
-          </div>
+  
+          <!-- Logo -->
           <div class="logo-img">
             <img
-              src="./jewel-Images/jewelry logo.avif"
+              src="jewel-Images/jewelry logo.avif"
               alt="Jewelry Logo"
               class="img-fluid"
             />
           </div>
-
+  
           <!-- Header Icons -->
-          <div class="head-logo d-flex gap-4 ms-auto">
-            <i class="fa-solid fa-magnifying-glass"></i>
-            <a href="./login.html"><i class="fa-regular fa-user"></i></a>
-            <a href="./cart.html"><i class="fa-solid fa-cart-shopping"></i></a>
+          <div class="head-logo d-flex gap-2 gap-sm-4 ms-auto">
+            <a href=""><i class="fa-solid fa-magnifying-glass fa-lg text-dark"></i></a>
+            <a href="./login.html"><i class="fa-regular fa-user fa-lg text-dark d-none d-sm-inline-block"></i></a>
+            <a href="./cart.html"><i class="fa-solid fa-cart-shopping fa-lg text-dark me-3"></i></a>
           </div>
         </div>
-      </div>
+        </div>
     </div>
 
     <div class="container mt-5">
@@ -228,18 +267,18 @@
       </div>
 
       
-    <footer class="pt-5">
+      <footer class="pt-5">
         <div class="footer-section">
           <div class="container">
             <div class="end-Footer">
               <div class="row">
-                <div class="col text-center">
+                <div class="col text-center mb-md-0 mb-4">
                   <img
-                    src="./jewel-Images/GB_logo_gold_trans-01.avif"
+                    src="jewel-Images/GB_logo_gold_trans-01.avif"
                     class="footer-logo"
                   />
-                </div>
-                <div class="col">
+                </div> 
+                <div class="col-lg">
                   <h5 class="mb-4">Quick links</h5>
                   <p>Exchange & Return Policy</p>
                   <p>FAQs</p>
@@ -247,15 +286,15 @@
                   <p>Track Order</p>
                   <p>Ring Size Guide</p>
                 </div>
-                <div class="col">
+                <div class="col-lg">
                   <h5 class="mb-4">Contact Us</h5>
                   <p>+923242412684</p>
                   <p>support@glitzyblings.com</p>
                 </div>
-                <div class="col">
+                <div class="col-lg">
                   <h5 class="mb-4">Our Story</h5>
                   <div class="Our-Story">
-                    <p>
+                    <p class="mb-md-0 mb-5">
                       We started GlitzyBlings with hopes of creating timeless,
                       luxury focused on quality and contemporary pieces at
                       affordable prices.
@@ -265,13 +304,13 @@
               </div>
               <div class="row pb-5">
                 <div class="col-lg-6 col-12">
-                  <h3 class="Subscribe-Emails mt-3 mb-3">
+                  <h3 class="Subscribe-Emails mt-3 mb-lg-3 mb-4 text-md-start text-center">
                     Subscribe to our emails
                   </h3>
-                  <div class="input-container">
+                  <div class="input-container ">
                     <input
                       type="text"
-                      class="email-input"
+                      class="email-input w-100 mx-auto"
                       placeholder="Email"
                       required
                     />
@@ -283,7 +322,7 @@
   
                 <div class="col-lg-6 col-12">
                   <div
-                    class="social-icons-Footer d-lg-flex gap-lg-4 d-none justify-content-end"
+                    class="social-icons-Footer d-flex gap-4 justify-content-lg-end justify-content-center mt-5"
                   >
                     <i class="fa-brands fa-facebook"></i>
                     <i class="fa-brands fa-instagram"></i>
@@ -300,7 +339,7 @@
           </div>
         </div>
       </footer>
-
+  
     <script
     type="text/javascript"
     src="https://cdn.jsdelivr.net/npm/jquery"
